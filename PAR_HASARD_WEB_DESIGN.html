@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>PAR HASARD_WEB_DESIGN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/icons/logo_favicon/logo_icon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(58, 58, 58);
+            background: linear-gradient(120deg, rgba(58, 58, 58, 0.6945611008075105) 0%, rgba(174, 170, 169, 0.6861577394629728) 50%, rgba(204, 204, 204, 0.688958859911152) 100%);
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .fixed_box {
+            position: fixed;
+            bottom: 40px;
+            right: 70px;
+            width: 40px;
+        }
+
+        #top {
+            max-width: 1320px;
+            margin: 0 auto;
+        }
+
+        #top img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <img src="images/Web_Design_Web_Version_JPG/01_Web Design.jpg" class="guide1">
+        <img src="images/Web_Design_Web_Version_JPG/02_Web Design Concept.jpg" class="guide1">
+        <img src="images/Web_Design_Web_Version_JPG/03_Web  Font.jpg" class="guide1">
+        <img src="images/Web_Design_Web_Version_JPG/04_Web  Color.jpg" class="guide1">
+        <img src="images/Web_Design_Web_Version_JPG/05_Site Map.jpg" class="guide1">
+        <img src="images/Web_Design_Web_Version_JPG/06_Wire Frame.jpg" class="guide1">
+        <img src="images/Web_Design_Web_Version_JPG/07_Wire Frame - OutPut.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/01_Index Web Page-1.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/02_Index Web Page-2.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/03_Index Web Page-3.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/04_Index Web Page.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/05_Men Web Page-2.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/06_Men Web Page-1.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/07_Men Web Page.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/08_Logo Shop Web Page.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/09_Logo Shop Web Page copy.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/10_Store Web Page-2.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/11_Store Web Page-1.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/12_Store Web Page.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/13_Brand Web Page-2.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/14_Brand Web Page-1.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/15_Brand Web Page.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/16_What’s New Web Page-2.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/17_What’s New Web Page-1.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/18_What’s New Web Page.jpg" class="guide1">
+        <img src="images/Web_Page_Design_Web_Version_JPG/19_Banner Detail.jpg" class="guide1">
+    </div>
+    <div class="fixed_box">
+        <a href="#top" class="top_btn"><!--href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.-->
+            <img src="images/icons/top_icon/top_btn.png" alt="top">
+        </a>
+    </div>
+
+
+    <!--이동시 부드럽게 이동시키기 위해 추가한 구문 시작. script쪽 전부 삭제가능.-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 500);//움직이는 시간 조정
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <!--이동시 부드럽게 이동시키기 위해 추가한 구문 끝. 삭제가능.-->
+</body>
+
+</html>
