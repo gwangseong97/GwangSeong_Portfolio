@@ -1391,6 +1391,10 @@ textarea {
     margin-bottom: 10px;
 }
 
+.folio-list>div:nth-child(2) {
+    margin-bottom: 10px;
+}
+
 
 
 /* ------------------------------------------------------------------- 
